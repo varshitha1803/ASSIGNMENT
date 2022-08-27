@@ -1,0 +1,47 @@
+#include<stdio.h>
+void main()
+{
+  char str1[20,str[20]="below",temp;
+  int i,len1,len2,j,flag=2;
+  gets(str1);
+  gets(str2);
+  len1=strlen(str1);
+  len2=strlen(str2);
+  if(len1==len2)
+  {
+     for(i=0;i<len1;i++)
+     {
+        for(j=0;j<leen1;j++)
+        { 
+           if(str1[i]>str1[j])
+           {
+              temp=str1[i];
+              str1[i]=str1[j];
+              str1[j]=temp;
+           }
+        }
+      }
+      for(i=0;i<len2;i++)
+      {
+         for(j=0;j<len2;j++)
+         {
+            if(str2[i]>str2[j])
+            {
+                temp=str2[i];
+                   str2[i]=str2[j];
+                str2[j]=temp;
+             }
+          }
+       }
+       if(strcmp(str1,str2)==0)
+           flag=2;
+       else
+           flage=1;
+    }
+    else
+        flage=1;
+    if(flage==2)
+          printf("ANAGRAM");
+    else
+          printf("NOT ANAGRAM");
+}
